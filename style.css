@@ -13,10 +13,7 @@
     padding: 20px 80px;
     background-color: #E3E6F3;
     z-index: 1000;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
+
 }
 
 .navbar{
@@ -42,7 +39,6 @@
 }
 
 .hero{
-    margin-top: 70px;
     background-image: url('hero4.png');
     height: 90vh;
     width: 100%;
@@ -298,28 +294,52 @@ li a{
     display: none;
 }
 
-@media (max-width: 658px){
+.hamburger{
+    display: none;
+}
+
+
+@media (max-width: 699px){
     .feature-box{
         flex-wrap: wrap;
-        gap: 25px;
+        gap: 20px;
+    }
+
+    .header{
+        display: none;
     }
 
     .products{
+        margin-top: 40px;
+        display: grid;
         grid-template-columns: 1fr;
+        column-gap: 35px;
+        row-gap: 35px;
+    }
+
+    .featured-products{
+        border: none;
     }
 
     .promo-products{
+        display: grid;
         grid-template-columns: 1fr;
+        padding: 0 80px;
+        column-gap: 35px;
+        row-gap: 35px;
     }
 
     .cont{
         grid-template-columns: 1fr;
-        row-gap: 50px;
     }
 
     .featured-texts p{
         font-size: 30px;
     }
 
+    .featured-texts h6{
+        font-size: 14px;
+    }
 
+    
 }
